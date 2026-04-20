@@ -1,0 +1,13 @@
+{
+  "name": "pg-booking-app",
+  "version": "1.0.0",
+  "description": "Room/PG booking web app with admin panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG Room Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PG Room Booking</h1>
+      <a href="/admin.html">Go to Admin Panel</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>Available Rooms</h2>
+        <div id="rooms" class="card-grid"></div>
+      </section>
+
+      <section>
+        <h2>Book a Room</h2>
+        <form id="bookingForm">
+          <label>
+            Room ID
+            <input name="roomId" required />
+          </label>
+          <label>
+            Full Name
+            <input name="customerName" required />
+          </label>
+          <label>
+            Phone
+            <input name="phone" required />
+          </label>
+          <label>
+            Check-in Date
+            <input type="date" name="checkInDate" required />
+          </label>
+          <label>
+            Duration (months)
+            <input type="number" min="1" name="months" required />
+          </label>
+          <button type="submit">Book Now</button>
+        </form>
+        <p id="bookingMsg"></p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
