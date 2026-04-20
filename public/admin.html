@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - PG Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Panel</h1>
+      <a href="/">Back to Booking Site</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>Add New Room</h2>
+        <form id="roomForm">
+          <label>Room Name <input name="name" required /></label>
+          <label>Location <input name="location" required /></label>
+          <label>Monthly Price <input type="number" name="price" required /></label>
+          <label>Available Beds <input type="number" name="availableBeds" required /></label>
+          <label>Amenities (comma-separated) <input name="amenities" /></label>
+          <button type="submit">Add Room</button>
+        </form>
+        <p id="roomMsg"></p>
+      </section>
+
+      <section>
+        <h2>Existing Rooms</h2>
+        <div id="adminRooms" class="card-grid"></div>
+      </section>
+
+      <section>
+        <h2>All Bookings</h2>
+        <div id="bookings"></div>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
